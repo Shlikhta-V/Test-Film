@@ -1,0 +1,66 @@
+
+  @import "../../../common/colors.scss";
+
+  .movie-wrapper{
+    .input-containet{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4em;
+     
+    button {
+      width: 150px;
+      height: 50px;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+      background: white;
+      border: 2px solid black;
+      box-shadow: 5px 5px 0 black,
+        -5px -5px 0 black,
+        -5px 5px 0 black,
+        5px -5px 0 black;
+      transition: 500ms ease-in-out;
+    }
+    
+    button:hover {
+      box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+    }
+    
+    button:focus {
+      outline: none;
+    }
+  }
+      .movie-list,
+      .show-list {
+        margin-top: -30px;
+        margin: 20px 0px;
+  
+       
+        h2 {
+          color: $font-secondary;
+          margin-bottom: 10px;
+          font-weight: 400;
+          display: grid;
+          border-style: none;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          border-bottom-style: none;
+          justify-items: center;
+          align-items: center;
+          margin-top: -50px;
+        }
+      }
+      
+      .movie-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 30px;
+        padding: 40px;
+      }  
+      .pagination{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+      }
+  }
